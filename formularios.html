@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title> <!-- SUPER IMPORTANTE, EL COMANDO CTRL+MAYUS+P abre el menu de funcionalidades,
+    en este caso usamos el comando "wrap with abbreviation" seleccionando lo que deseamos poner, y luego senos
+    permitira colocar el nombre de la etiqueta a colocar antes y despues, en este caso <p>-->
+</head>
+
+<body> <!--La etiqueta para abrir el formulario es form-->
+    <form method="post"> <!-- En la etiqueta formulario, existe un atributo de metodo, de forma automatica se
+        asume que es el metodo get, pero existen otros metodos, por ejemplo el metodo post-->
+        <!-- El atributo action, especifica a donde se mandan esos datos obtenidos por el formulario a esa url-->
+        <fieldset>
+            <legend> Formulario de ejemplo </legend>
+            <p>Nombre: <input type="text" name="nombre" placeholder="Inserte nombre de usuario" title="Nombre"></p>
+            </br> <!-- Todos los formularios tiene un atributo name, que es
+                    la que guarda el valor que se va a enviar--> <!-- Los valores placeholder y title sirven para escribir un texto dentro del espacio a rellenar en
+                    gris y para que se cree una caja de informacion cuando pases el raton encima-->
+            <p>Edad: <input type="number" name="edad" required></p> </br><!-- Number crea el boton que permite subir o bajar de numero en el
+                    espacio-->
+            <!-- La etiqueta required no permite al usuario mandar el formulario hasta que todos los campos con required hayan sido completados-->
+            <p>Contraseña: <input type="password" name="contrasena" tabindex="2"></p></br> <!-- Password "censura" lo que escribes viendo solo visibles
+                    asteriscos/puntos-->
+            <p> Color favorito: <input type="color" name="colorfavorito" tabindex="0"></p> </br><!-- Color permite la seleccion de un color que se dispone
+                    en cada navegador-->
+            <p> Fecha: <input type="date" name="fecha" tabindex="1"></p></br> <!-- Date permite la seleccion de fecha que se dispone
+                    en cada navegador--> <!-- El tabindex sireva para ordenar los campos a la hora de accionar el boton de tabulador, en el orden de los valores
+                    dados a tabindex-->
+            <p> Fecha actual y hora: <input type="datetime-local" name="fechactual"></p></br> <!-- Date permite la seleccion de fecha y hora que se dispone
+                     en cada navegador-->
+            <p>Fichero: <input type="file" name="archivo"></br></p>
+            <!-- File permite el campo donde se pueda seleccionar un archivo en el formulario-->
+            <p> Oculto: <input type="hidden" name="oculto" value="69"></p></br>
+            <!-- Hidden permite crear informacion invisible para el usuario, cuyo uso principal es guardar
+                      valores o trabajar informacion sin que el usuario lo sepa, pero dicha informacion se envia igual-->
+            <!-- Value sirve para agregar un valor a una variable-->
+            <p>
+                <X<textarea name="sugerencias" id="" placeholder="Sugerencias" cols="50" rows="10" maxlength="20">
+                    </textarea>
+                    <!-- Permite al usuario escribir lo que desee dentro
+y de normal es mas grande permitiendo tambien aumentar su tamaño. En este caso su tamaño en columnas es 20 y el de filas 10 tambien-->
+                    <!-- Maxlenght restringe el numero de caracteres ques se pueden escribir en este espacio-->
+                    <p>Deporte favorito: <br> </br>
+                        Baloncesto: <input type="checkbox" value="Baloncesto">
+                        Futbol: <input type="checkbox" value="Futbol">
+                        Tenis: <input type="checkbox" value="Tenis">
+                        Natacion: <input type="checkbox" value="Natacion">
+                    </p>
+                    <!-- Checkbox permite la creacion de casillas de marcar, en la url se identificaria como on y off (en caso de tener
+                 action=get) -->
+                    <p>Sexo:
+                        <input type="radio" name="sexo" value="Hombre">Hombre
+                        <input type="radio" name="sexo" value="Mujer">Mujer
+                    </p>
+                    <!-- Radio permite que cuando se selecciona una opcion, la otra pocion sse quitaria. Para que esto funcione han de tener el mismo
+                 valor en name-->
+                    <p>Lugares<select name="ciudad" multiple> 
+                            <option value="Dueñas">Dueñas</option>
+                            <option value="Venta de Baños">Venta de Baños</option>
+                            <option value="El Monte Viejo">El monte viejo</option>
+                            <option value="Palencia"> Palencia</option>
+                            <br> </br>
+                            <!-- Option permite la creacion de un desplegable con todas las opciones que se deseen-->
+                            <!-- Multiple permite que seleccionen multiples opciones del desplegable-->
+        </fieldset>
+
+        <input type="submit" value="Enviar"> <!-- Se trata de un tipo minimo, su uso es como boton de enviar
+       para el cuestionario, y su estructura principal es input type-->
+        <input type="reset" value="Borrar"> <!-- Reset permite borrar todo el formulario y no lo envia ni
+       guarda a ningun lado-->
+    </form>
+
+</body>
+
+</html>
