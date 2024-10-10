@@ -1,0 +1,10 @@
+a) ¿Cuál es el atributo que sirve para “abrir” una pequeña ventana amarilla (tooltip) cuando sitúa el ratón el usuario sobre un componente y sirve de modo de ayuda/indicación al usuario?
+
+
+b) ¿Es span etiqueta tipo bloque o línea?
+
+De línea
+
+c) ¿Con qué etiqueta colocamos el título de la ventana y en qué zona de la web se realiza?
+
+<title> localizado justo después de la etiqueta de apertura del "head"
