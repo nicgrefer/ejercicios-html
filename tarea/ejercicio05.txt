@@ -1,6 +1,9 @@
 a) ¿Cuál es el atributo que sirve para “abrir” una pequeña ventana amarilla (tooltip) cuando sitúa el ratón el usuario sobre un componente y sirve de modo de ayuda/indicación al usuario?
 
+<<<<<<< Updated upstream
 title
+=======
+>>>>>>> Stashed changes
 
 b) ¿Es span etiqueta tipo bloque o línea?
 
